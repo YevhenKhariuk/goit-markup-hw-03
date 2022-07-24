@@ -9,6 +9,23 @@
   --hero-button-color: #188ce8;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  margin-left: 0;
+  padding: 0;
+}
+
 .header-item.current {
   color: var(--third-color);
 }
@@ -23,7 +40,25 @@ body {
   text-decoration: none;
 }
 
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid red;
+}
+
+.container-header {
+  border-bottom: 1px solid #000;
+}
+
 /*----header----*/
+
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 
 .header-logo {
   font-family: "Raleway";
@@ -80,6 +115,11 @@ body {
   background-color: var(--sixth-color);
 }
 
+.container-hero {
+  height: 600px;
+  padding-top: 200px;
+}
+
 .hero-logo {
   font-weight: 900;
   font-size: 44px;
@@ -87,9 +127,14 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--second-color);
+  text-align: center;
+  max-width: 696px;
+  margin-left: 252px;
 }
 
 .hero-btn {
+  display: block;
+  margin: 32px auto 0;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
@@ -138,6 +183,15 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--fifth-color);
+  margin-top: 10px;
+}
+
+.benefits-item {
+  max-width: 270px;
+}
+
+.container-benefits {
+  margin-top: 94px;
 }
 
 /*---prices---*/
@@ -148,6 +202,12 @@ body {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--first-color);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.container-prices {
+  margin-top: 94px;
 }
 
 /*----team----*/
@@ -158,6 +218,11 @@ body {
 
 .team-item {
   background-color: var(--second-color);
+  width: 270px;
+  height: 368px;
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .team-tittle {
@@ -166,6 +231,7 @@ body {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--first-color);
+  text-align: center;
 }
 
 .team-participant {
@@ -174,12 +240,20 @@ body {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--first-color);
+  margin-top: 30px;
 }
 
 .team-text {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--fifth-color);
+  margin-top: 10px;
+}
+
+.container-team {
+  margin-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /*---footer---*/
@@ -230,6 +304,15 @@ body {
 .adress-link:hover,
 .adress-link:focus {
   color: var(--third-color);
+}
+
+.container-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.adress-list {
+  padding-top: 20px;
 }
 
 /*---portfolio---*/
@@ -286,4 +369,8 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--fifth-color);
+}
+
+.portfolio-list {
+  padding-bottom: 16px;
 }
