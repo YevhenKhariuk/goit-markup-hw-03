@@ -46,19 +46,49 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid red;
+  /* outline: 2px solid red;*/
 }
 
 .container-header {
-  border-bottom: 1px solid #000;
+  align-items: center;
 }
 
 /*----header----*/
 
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #ececec;
 }
+
+.page-header > .container-header {
+  display: flex;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+  display: flex;
+  gap: 50px;
+}
+
+/*
+.header-item-mailtel:not(:last-child) {
+  margin-right: 50px;
+}
+*/
+
+/*
+.header-item-mailtel {margin-left: 50px;}
+*/
 
 .header-logo {
   font-family: "Raleway";
@@ -67,6 +97,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--first-color);
+  margin-right: 93px;
 }
 
 .header-logo:hover,
@@ -190,8 +221,16 @@ body {
   max-width: 270px;
 }
 
-.container-benefits {
-  margin-top: 94px;
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.benefits-list {
+  display: flex;
+}
+
+.benefits {
+  padding-top: 94px;
 }
 
 /*---prices---*/
@@ -206,8 +245,14 @@ body {
   margin-bottom: 50px;
 }
 
-.container-prices {
-  margin-top: 94px;
+.prices-list {
+  display: flex;
+  gap: 30px;
+}
+
+.prices {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /*----team----*/
@@ -222,7 +267,7 @@ body {
   height: 368px;
   border-radius: 0px 0px 4px 4px;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .team-tittle {
@@ -251,9 +296,13 @@ body {
 }
 
 .container-team {
-  margin-top: 94px;
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.team-list {
+  display: flex;
+  gap: 30px;
 }
 
 /*---footer---*/
@@ -317,6 +366,11 @@ body {
 
 /*---portfolio---*/
 
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .btn-portfolio-wse {
   font-family: inherit;
   font-weight: 500;
@@ -373,4 +427,21 @@ body {
 
 .portfolio-list {
   padding-bottom: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-list-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 34px;
+}
+
+.item-button:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio-item:nth-child(n + 4) {
+  margin-top: 30px;
 }
