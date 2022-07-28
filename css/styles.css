@@ -450,7 +450,7 @@ img {
 .portfolio-list-item {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 .item-button:not(:last-child) {
@@ -460,9 +460,11 @@ img {
 /*.portfolio-item:nth-child(n + 4) {
   margin-top: 30px;
 }*/
+
 .portfolio-item {
 }
 
 .portfolio-item-container {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
