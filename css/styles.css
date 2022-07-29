@@ -38,6 +38,8 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -53,11 +55,11 @@ img {
   /* outline: 2px solid red;*/
 }
 
+/*----header----*/
+
 .container-header {
   align-items: center;
 }
-
-/*----header----*/
 
 .page-header {
   border-bottom: 1px solid #ececec;
@@ -86,6 +88,7 @@ img {
 .header-mailtel {
   padding-top: 32px;
   padding-bottom: 32px;
+  display: block;
 }
 
 /*
@@ -108,6 +111,7 @@ img {
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 24px;
+  display: block;
 }
 
 .header-logo:hover,
@@ -156,11 +160,6 @@ img {
   background-color: var(--sixth-color);
   padding-top: 200px;
   padding-bottom: 200px;
-}
-
-.container-hero {
-  /*height: 600px;
-  padding-top: 200px;*/
 }
 
 .hero-logo {
@@ -261,11 +260,6 @@ img {
 .prices-list {
   display: flex;
   gap: 30px;
-}
-
-.prices-image {
-  max-width: 100%;
-  height: auto;
 }
 
 .prices {
@@ -460,9 +454,6 @@ img {
 /*.portfolio-item:nth-child(n + 4) {
   margin-top: 30px;
 }*/
-
-.portfolio-item {
-}
 
 .portfolio-item-container {
   padding: 20px 24px;
